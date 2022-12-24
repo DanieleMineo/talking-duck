@@ -1,0 +1,121 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General rules */
+
+html {
+    height: 100%;
+    background: linear-gradient(#3535ec, #2882b6);
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+/* Regola generica per le immagini, con max width 100% si adatteranno automaticamente alla larghezza massima del loro contenitore */
+
+img {
+    max-width: 100%;
+}
+
+/* Container */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Logo */
+
+header img {
+    width: 56px;
+}
+
+/* Casella di testo */
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    padding: 24px;
+    font-size: 20px;
+}
+
+/* Play Button */
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+button {
+    width: 64px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f81669;
+    position: relative;
+    top: 29px;
+    right: 16px;
+}
+
+/* Stile del bottone solo quando disabilitato */
+
+button:disabled {
+    opacity: 0.7;
+    background-color: #939191;
+}
+
+button img {
+    vertical-align: middle;
+}
+
+/* Controlli del tono */
+
+.pitch-controls {
+    width: 70%;
+}
+
+.rate-controls {
+    width: 70%;
+}
+
+/* Barra del tono */
+
+input {
+    width: 100%;
+    accent-color: #fff;
+}
+
+label {
+    display: block;
+    font-size: 14;
+    margin-bottom: 12px;
+}
+
+/* Paperelle */
+
+.animated-duck {
+    display: none;
+}
+
+.talking .animated-duck  {
+    display: block;
+}
+
+.talking .static-duck {
+    display: none;
+}

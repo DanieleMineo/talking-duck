@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talking Duck</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <!-- Manifest -->
+    <link rel="manifest" href="site.webmanifest">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- container utilizzato per creare aria fra bordi e contenuto -->
+    <div class="container">
+        <!-- intestazione -->
+        <header>
+            <img src="images/logo.png" alt="logo-boolean-cw">
+        </header>
+        <!-- contenuto principale -->
+        <main>
+            <!-- Casella di testo -->
+            <textarea placeholder="Scrivi qui..."></textarea>
+
+            <!-- Controlli -->
+            <div class="controls">
+            <!-- play button -->
+                <button>
+                    <img src="images/play.png" alt="play">
+                </button>
+            <!-- controlli del tono -->
+                <div class="pitch-controls">
+                    <label>Pitch</label>
+                    <input type="range" min="0.1" max="2" step=".1">
+                </div>
+                <div class="rate-controls">
+                    <label>Rate</label>
+                    <input type="range" min="0.1" max="2" step=".1">
+                </div>
+            </div>
+
+            <!-- Paperella -->
+            <figure>
+                <img class="static-duck" src="images/talking-duck-static.png" alt="static-duck">
+                <img class="animated-duck" src="images/talking-duck-animated.gif" alt="animated-duck">
+            </figure>
+        </main>
+    </div>
+    <!-- logica JS -->
+    <script src="script.js"></script>
+</body>
+</html>
